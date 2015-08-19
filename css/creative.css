@@ -263,7 +263,7 @@ header .header-content .header-content-inner p {
     max-width: 650px;
 }
 
-.portfolio-box .portfolio-box-caption:active {
+.portfolio-box .portfolio-box-caption {
     display: block;
     position: absolute;
     bottom: 0;
