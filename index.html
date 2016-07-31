@@ -104,8 +104,19 @@
 			</script>
 			
 			<script>
-				var audio = new Audio('wilhelm.mp3');
-				audio.play();
+				(function(){
+					  var audioElement = document.createElement('audio');
+					  audioElement.setAttribute('src', 'wilhelm.mp3');
+					  var isPlaying = false;
+
+					  window.onresize = function() {
+						if (!isPlaying){
+						isPlaying=true;
+      						audioElement.play();
+      						isPlaying=false;
+    						}
+				 	};
+				})();
 			</script>
 
 	</body>
